@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat";
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+.cart {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: 450px;
+  border-radius: 10px;
+  margin: 100px auto;
+}
+
+h1 {
+  font-family: "Fraunces";
+  font-weight: 700;
+  color: black;
+  margin-bottom: 30px;
+}
+.cart-container {
+  width: 50%;
+  padding: 35px;
+  color: hsl(228, 12%, 48%)
+}
+
+.prices {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price {
+  font-family: "Fraunces";
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+  padding-right: 20px;
+}
+p {
+  font-size: 14px;
+  line-height: 1.5rem;
+  margin-bottom: 30px;
+
+  
+}
+.img {
+  width: 50%;
+  background: url(/images/image-product-desktop.jpg);
+  background-size: 100% 100%;
+  border-radius: 10px 0 0 10px;
+}
+.btn {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(158, 36%, 37%);
+  width: 100%;
+  padding: 10px 50px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.prices {
+  display: flex;
+}
+
+del {
+  padding-right: 40px;
+}
+
+.btn:hover {
+  background-color: hsl(212, 21%, 14%);
+  cursor: pointer;
+}
+
+@media screen and (device-width: 375px) {
+  .cart {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 345px;
+    height: 615px;
+    border-radius: 10px;
+    margin: 10px auto 5px;
+  }
+  .img {
+    height: 240px;
+    width: 100%;
+    background: url(/images/image-product-mobile.jpg);
+    background-size: 100% 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .cart-container {
+    width: 100%;
+    padding: 25px;
+    color: #7e7e86;
+  }
+  p {
+    line-height: 1.5rem;
+  }
+  .btn {
+    padding: 10px 90px;
+  }
+}
