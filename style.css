@@ -134,7 +134,7 @@ del {
   cursor: pointer;
 }
 
-@media screen and (device-width: 375px) {
+@media screen and (max-width: 650px) {
   .cart {
     display: flex;
     flex-direction: column;
